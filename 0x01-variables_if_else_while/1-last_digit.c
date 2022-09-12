@@ -4,13 +4,13 @@
 
 /**
  *
- *  * main - Prints random number to variable
+ ** main - Prints random number to variable
  *
- *   *
+ **
  *
- *    * Return: Always (Successful)
+ ** Return: Always (Successful)
  *
- *     */
+ **/
 int main(void)
 {
 	int n;
@@ -33,5 +33,4 @@ int main(void)
 	{
 		printf("less than 6 and not 0\n");
 	return (0);
-
 }
