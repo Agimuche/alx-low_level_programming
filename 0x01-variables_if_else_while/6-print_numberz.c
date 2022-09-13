@@ -2,9 +2,15 @@
 
 /**
  *
- ** main - Prints the numbers since 0 to 9
+ ** main - print if the number is postive, zero, or negative
  *
- ** Return: Always (Success)
+ **
+ *
+ ** Description: using the main function
+ *
+ ** this program prints "Programming is positive, zero, or negative
+ *
+ ** Return: 0
  *
  **/
 int main(void)
@@ -13,7 +19,7 @@ int main(void)
 
 	for (n = '0'; n <= '9'; n++)
 	{
-		putchar(n)
+			putchar(n);
 	}
 	putchar('\n');
 	return (0);
