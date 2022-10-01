@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include "main.h"
 /**
 *_strstr - The _strstr() function finds the first occurrence
@@ -31,4 +32,33 @@ char *_strstr(char *haystack, char *needle)
 		haystack++;
 	}
 	return ('\0');
+=======
+#include <stdio.h>
+#include "main.h"
+
+/**
+ * _strstr - Entry point
+ * @haystack: input
+ * @needle: input
+ * Return: Always 0 (Success)
+ */
+char *_strstr(char *haystack, char *needle)
+{
+	for (; *haystack != '\0'; haystack++)
+	{
+		char *one = haystack;
+		char *two = needle;
+
+		while (*one == *two && *two != '\0')
+		{
+			one++;
+			two++;
+		}
+
+		if (*two == '\0')
+			return (haystack);
+	}
+
+	return (NULL);
+>>>>>>> e6362ae58b425086e6bd4093d22b9818b84b1525
 }
