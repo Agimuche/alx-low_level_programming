@@ -6,8 +6,7 @@
 * Return: a string pointer
 */
 char *_strdup(char *str)
-
-}
+{
 	int i = 1, j = 0;
 	char *s;
 
@@ -26,3 +25,4 @@ char *_strdup(char *str)
 	s[j] = '\0';
 	return (s);
 }
+
