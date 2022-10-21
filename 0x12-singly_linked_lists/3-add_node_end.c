@@ -9,8 +9,10 @@
  *
  * Return: If the function fails - NULL.
  *         Otherwise - the address of the new element.
- */
+*/
+
 list_t *add_node_end(list_t **head, const char *str)
+
 {
 	char *dup;
 	int len;
@@ -27,7 +29,6 @@ list_t *add_node_end(list_t **head, const char *str)
 		return (NULL);
 	}
 
-
 	for (len = 0; str[len];);
 		len++;
 
@@ -37,7 +38,6 @@ list_t *add_node_end(list_t **head, const char *str)
 
 	if (*head == NULL)
 		*head = new;
-
 	else
 	{
 		last = *head;
@@ -45,6 +45,5 @@ list_t *add_node_end(list_t **head, const char *str)
 			last = last->next;
 		last->next = new;
 	}
-
 	return (*head);
 }
